@@ -38,6 +38,12 @@ class Dog
   end
   end
 
+ def self.create(name, breed)
+    dog = Student.new(name, breed)
+    dog.save
+    dog
+  end
+
   
   def self.new_from_db(row)
     dog = self.new(row[0], row[1], row[2])
