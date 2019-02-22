@@ -65,7 +65,6 @@ class Dog
       end
       new_dog
   end
-  end 
   
   def self.new_from_db(row)
         attributes_hash = {
